@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420">
+  <defs>
+    <linearGradient id="enamel" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#fff"/><stop offset=".36" stop-color="#f1efff"/><stop offset=".69" stop-color="#b5a5fa"/><stop offset="1" stop-color="#7561d9"/>
+    </linearGradient>
+    <radialGradient id="gloss" cx=".34" cy=".19" r=".64"><stop stop-color="white" stop-opacity=".94"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="root" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8472da" stop-opacity=".15"/><stop offset="1" stop-color="#6b53c3" stop-opacity=".82"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="9"/></filter>
+    <path id="shape" d="M195 69C153 44 91 39 69 88 45 138 71 188 92 226c17 30 16 104 42 125 34 29 37-89 63-91 26-2 39 109 68 93 23-13 24-84 40-122 15-38 43-78 33-125-12-61-74-69-118-44-10 6-15 13-25 7Z"/>
+    <clipPath id="clip"><use href="#shape"/></clipPath>
+  </defs>
+  <use href="#shape" fill="url(#enamel)" stroke="#fff" stroke-opacity=".8" stroke-width="2"/>
+  <use href="#shape" fill="url(#gloss)"/>
+  <g clip-path="url(#clip)">
+    <path d="M98 191c29 14 64 47 64 90 0 43-9 79-29 84-23-6-35-98-43-134zm118 64c22 7 32 18 39 55 4 25 12 37 28 29l18-69c-8-51-40-58-85-15z" fill="url(#root)" filter="url(#blur)"/>
+    <path d="M82 115c7-33 40-48 72-36m76 0c38-20 65-8 78 11" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="8" stroke-linecap="round" filter="url(#blur)"/>
+    <path d="M141 80c33 1 40 21 62 19s31-17 57-22" fill="none" stroke="#9b8bea" stroke-opacity=".48" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
